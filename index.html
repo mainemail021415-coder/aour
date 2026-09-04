@@ -74,22 +74,44 @@
       color: #0A0A23;
     }
 
-    /* ===== CONTENT SECTIONS ===== */
-    section {
-      padding: 60px 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    #overview img {
-      width: 300px;
-      border-radius: 8px;
-      float: right;
-      margin-left: 20px;
-    }
-    #overview, #history {
+    /* ===== COMPANY OVERVIEW ===== */
+    #overview {
       background-color: #0B1A3A;
+      color: #D4AF37;
+      padding: 80px 40px;
       border-top: 2px solid #D4AF37;
       border-bottom: 2px solid #D4AF37;
+    }
+    .overview-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .overview-content .text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .overview-content .image img {
+      width: 350px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    /* ===== HISTORY ===== */
+    #history {
+      background-color: #0B1A3A;
+      color: #D4AF37;
+      padding: 60px 40px;
+      border-top: 2px solid #D4AF37;
+      border-bottom: 2px solid #D4AF37;
+    }
+
+    /* ===== CONTACT ===== */
+    #contact {
+      padding: 60px 40px;
+      text-align: center;
     }
 
     /* ===== FOOTER ===== */
@@ -126,9 +148,15 @@
   <!-- ===== COMPANY OVERVIEW ===== -->
   <section id="overview">
     <h2>Company Overview</h2>
-    <img src="assets/ppe.jpg" alt="Safety Equipment">
-    <p><strong>20+ years of excellence</strong> in the trading industry with deep sourcing and supply chain expertise.</p>
-    <p>AOUR TRADING, INC. is a trusted provider of personal protective equipment (PPE) and essential consumables, dedicated to quality, reliability, and global supply solutions.</p>
+    <div class="overview-content">
+      <div class="text">
+        <p><strong>20+ years of excellence</strong> in the trading industry with deep sourcing and supply chain expertise.</p>
+        <p>AOUR TRADING, INC. is a trusted provider of personal protective equipment (PPE) and essential consumables, dedicated to quality, reliability, and global supply solutions.</p>
+      </div>
+      <div class="image">
+        <img src="assets/ppe.jpg" alt="Safety Equipment">
+      </div>
+    </div>
   </section>
 
   <!-- ===== HISTORY ===== -->

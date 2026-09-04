@@ -12,8 +12,8 @@
       color: #222;
     }
     header {
-      background-color: #002366; /* deep blue */
-      color: #D4AF37; /* gold */
+      background-color: #002366;
+      color: #D4AF37;
       padding: 20px;
       text-align: center;
     }
@@ -23,12 +23,8 @@
       display: block;
       margin: 0 auto 10px;
     }
-    h1 {
-      margin: 0;
-    }
-    nav {
-      margin-top: 10px;
-    }
+    h1 { margin: 0; font-size: 28px; }
+    nav { margin-top: 10px; }
     nav a {
       color: #D4AF37;
       margin: 0 15px;
@@ -39,6 +35,7 @@
       padding: 40px;
       text-align: center;
     }
+    h2 { color: #002366; }
     .btn {
       background-color: #D4AF37;
       color: #002366;
@@ -53,30 +50,114 @@
       text-align: center;
       padding: 10px;
     }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+    ul { list-style-type: none; padding: 0; }
+    li { margin-bottom: 5px; }
+    .highlight { color: #D4AF37; font-weight: bold; }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="AOUR TRADING, INC Logo">
     <img src="assets/logo.png" alt="AOUR TRADING, INC Logo">
     <h1>AOUR TRADING, INC.</h1>
     <p>Empowering Global Trade Solutions</p>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <a href="#overview">Overview</a>
+      <a href="#history">History</a>
+      <a href="#clients">Clients</a>
+      <a href="#team">Team</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Welcome to Our Company</h2>
-    <p>We provide reliable trading and logistics services worldwide.</p>
-    <button class="btn">Learn More</button>
+  <section id="overview">
+    <div class="content">
+      <h2>Company Overview</h2>
+      <p><span class="highlight">20+ years of experience</span> in the trading industry with deep knowledge in sourcing and supply chain management.</p>
+      <p>AOUR TRADING, INC. is a reliable provider of personal protective equipment (PPE) and essential consumables, committed to delivering quality, consistency, and dependable supply solutions.</p>
+    </div>
+  </section>
+
+  <section id="history">
+    <div class="content">
+      <h2>Our History</h2>
+      <p>Established in 2006 as <strong>Lyrotech Trading</strong> and restructured in 2026 as a corporation, the company reflects a legacy of experience strengthened by a new generation of leadership.</p>
+      <p>Today, AOUR Trading continues to evolve with a forward‑looking approach, combining proven expertise with fresh innovation.</p>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="content">
+      <h2>List of Clients</h2>
+      <ul>
+        <li>Toyota Motor Phils. Corp</li>
+        <li>Jeco Autoparts Phils.</li>
+        <li>Daiho Phils. Inc.</li>
+        <li>Yutaka Manufacturing Phils. Inc.</li>
+        <li>Bell Electronics Corp.</li>
+        <li>Calamba Doctors Hospital</li>
+        <li>Micro Precision Calibration</li>
+        <li>Denso Phils. Corp.</li>
+        <li>Terumo Phils. Corp.</li>
+        <li>American Technology Inc.</li>
+        <!-- Add more clients as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="content">
+      <h2>Team Expertise</h2>
+      <p>Our team brings solid industry knowledge and technical capability in industrial supply, cleanroom solutions, and vertical transportation systems.</p>
+      <p>With a strong focus on quality, safety, and efficiency, we ensure dependable support and long‑term value for every client we serve.</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="content">
+      <h2>What We Offer</h2>
+      <h3>Hotel & Hospitality Supplies</h3>
+      <ul>
+        <li>Guest Room Essentials</li>
+        <li>Housekeeping & Cleaning Supplies</li>
+        <li>Food & Beverage (F&B) Supplies</li>
+      </ul>
+
+      <h3>Safety & Workplace Essentials</h3>
+      <ul>
+        <li>Personal Protective Equipment (PPE)</li>
+        <li>Industrial Accessories & Support Materials</li>
+        <li>Hospital Supplies</li>
+      </ul>
+
+      <h3>Vertical Transportation Solutions</h3>
+      <ul>
+        <li>Elevator Systems</li>
+        <li>Escalators & Mobility Systems</li>
+        <li>Installation & Commissioning</li>
+        <li>Maintenance & Modernization</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Partner with us. We deliver quality, reliability, and long‑term value through trusted partnerships and dependable solutions.</p>
+      <p><strong>Address:</strong> Block 38 Lot 4, Madison South, Barangay Batino, Calamba, Laguna, Philippines</p>
+      <p><strong>Email:</strong> <a href="mailto:info@aourtrading.com">info@aourtrading.com</a></p>
+      <p><strong>Website:</strong> <a href="https://www.aourtrading.com">www.aourtrading.com</a></p>
+      <p><strong>Contact Numbers:</strong> 0955‑655‑5670 | 0936‑159‑1531 | 0945‑873‑8100</p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 AOUR TRADING, INC. All rights reserved.</p>
+    <p>&copy; 2026 AOUR TRADING, INC. All rights reserved.</p>
   </footer>
 </body>
 </html>

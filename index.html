@@ -5,157 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AOUR TRADING, INC.</title>
   <style>
+    /* ===== GLOBAL STYLE ===== */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #F4F4F4;
-      color: #222;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0A0A23;
+      color: #F4F4F4;
     }
-    header {
-      background-color: #002366;
+    h1, h2, h3 {
       color: #D4AF37;
-      padding: 20px;
-      text-align: center;
+      margin-bottom: 10px;
     }
-    header img {
-      width: 120px;
-      border-radius: 8px;
-      display: block;
-      margin: 0 auto 10px;
+    p {
+      line-height: 1.6;
     }
-    h1 { margin: 0; font-size: 28px; }
-    nav { margin-top: 10px; }
-    nav a {
+    a {
       color: #D4AF37;
-      margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
     }
-    section {
-      padding: 40px;
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      background-color: #001F3F;
       text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
-    h2 { color: #002366; }
-    .btn {
-      background-color: #D4AF37;
-      color: #002366;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
+    nav a {
+      margin: 0 20px;
       font-weight: bold;
+      transition: color 0.3s;
     }
-    footer {
-      background-color: #002366;
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: url('assets/containers-city.jpg') center/cover no-repeat;
+      position: relative;
       color: #D4AF37;
       text-align: center;
-      padding: 10px;
+      padding: 160px 20px;
     }
-    .content {
-      max-width: 900px;
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 50, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .btn {
+      background-color: transparent;
+      border: 2px solid #D4AF37;
+      color: #D4AF37;
+      padding: 10px 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background-color: #D4AF37;
+      color: #0A0A23;
+    }
+
+    /* ===== CONTENT SECTIONS ===== */
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
       margin: auto;
-      text-align: left;
     }
-    ul { list-style-type: none; padding: 0; }
-    li { margin-bottom: 5px; }
-    .highlight { color: #D4AF37; font-weight: bold; }
+    #overview img {
+      width: 300px;
+      border-radius: 8px;
+      float: right;
+      margin-left: 20px;
+    }
+    #overview, #history {
+      background-color: #0B1A3A;
+      border-top: 2px solid #D4AF37;
+      border-bottom: 2px solid #D4AF37;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: #001F3F;
+      color: #D4AF37;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="assets/logo.png" alt="AOUR TRADING, INC Logo">
-    <h1>AOUR TRADING, INC.</h1>
-    <p>Empowering Global Trade Solutions</p>
-    <nav>
-      <a href="#overview">Overview</a>
-      <a href="#history">History</a>
-      <a href="#clients">Clients</a>
-      <a href="#team">Team</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#history">History</a>
+    <a href="#clients">Clients</a>
+    <a href="#team">Team</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="AOUR TRADING, INC Logo" style="width:120px;">
+      <h1>AOUR TRADING, INC.</h1>
+      <p>Empowering Global Trade Solutions</p>
+      <button class="btn">Learn More</button>
+    </div>
+  </section>
+
+  <!-- ===== COMPANY OVERVIEW ===== -->
   <section id="overview">
-    <div class="content">
-      <h2>Company Overview</h2>
-      <p><span class="highlight">20+ years of experience</span> in the trading industry with deep knowledge in sourcing and supply chain management.</p>
-      <p>AOUR TRADING, INC. is a reliable provider of personal protective equipment (PPE) and essential consumables, committed to delivering quality, consistency, and dependable supply solutions.</p>
-    </div>
+    <h2>Company Overview</h2>
+    <img src="assets/ppe.jpg" alt="Safety Equipment">
+    <p><strong>20+ years of excellence</strong> in the trading industry with deep sourcing and supply chain expertise.</p>
+    <p>AOUR TRADING, INC. is a trusted provider of personal protective equipment (PPE) and essential consumables, dedicated to quality, reliability, and global supply solutions.</p>
   </section>
 
+  <!-- ===== HISTORY ===== -->
   <section id="history">
-    <div class="content">
-      <h2>Our History</h2>
-      <p>Established in 2006 as <strong>Lyrotech Trading</strong> and restructured in 2026 as a corporation, the company reflects a legacy of experience strengthened by a new generation of leadership.</p>
-      <p>Today, AOUR Trading continues to evolve with a forward‑looking approach, combining proven expertise with fresh innovation.</p>
-    </div>
+    <h2>Our History</h2>
+    <p>Established in 2006 as <strong>Lyrotech Trading</strong> and restructured in 2026 as a corporation, the company reflects a legacy of experience strengthened by a new generation of leadership.</p>
+    <p>Today, AOUR Trading continues to evolve with a forward‑looking approach, combining proven expertise with fresh innovation.</p>
   </section>
 
-  <section id="clients">
-    <div class="content">
-      <h2>List of Clients</h2>
-      <ul>
-        <li>Toyota Motor Phils. Corp</li>
-        <li>Jeco Autoparts Phils.</li>
-        <li>Daiho Phils. Inc.</li>
-        <li>Yutaka Manufacturing Phils. Inc.</li>
-        <li>Bell Electronics Corp.</li>
-        <li>Calamba Doctors Hospital</li>
-        <li>Micro Precision Calibration</li>
-        <li>Denso Phils. Corp.</li>
-        <li>Terumo Phils. Corp.</li>
-        <li>American Technology Inc.</li>
-        <!-- Add more clients as needed -->
-      </ul>
-    </div>
-  </section>
-
-  <section id="team">
-    <div class="content">
-      <h2>Team Expertise</h2>
-      <p>Our team brings solid industry knowledge and technical capability in industrial supply, cleanroom solutions, and vertical transportation systems.</p>
-      <p>With a strong focus on quality, safety, and efficiency, we ensure dependable support and long‑term value for every client we serve.</p>
-    </div>
-  </section>
-
-  <section id="products">
-    <div class="content">
-      <h2>What We Offer</h2>
-      <h3>Hotel & Hospitality Supplies</h3>
-      <ul>
-        <li>Guest Room Essentials</li>
-        <li>Housekeeping & Cleaning Supplies</li>
-        <li>Food & Beverage (F&B) Supplies</li>
-      </ul>
-
-      <h3>Safety & Workplace Essentials</h3>
-      <ul>
-        <li>Personal Protective Equipment (PPE)</li>
-        <li>Industrial Accessories & Support Materials</li>
-        <li>Hospital Supplies</li>
-      </ul>
-
-      <h3>Vertical Transportation Solutions</h3>
-      <ul>
-        <li>Elevator Systems</li>
-        <li>Escalators & Mobility Systems</li>
-        <li>Installation & Commissioning</li>
-        <li>Maintenance & Modernization</li>
-      </ul>
-    </div>
-  </section>
-
+  <!-- ===== CONTACT ===== -->
   <section id="contact">
-    <div class="content">
-      <h2>Contact Us</h2>
-      <p>Partner with us. We deliver quality, reliability, and long‑term value through trusted partnerships and dependable solutions.</p>
-      <p><strong>Address:</strong> Block 38 Lot 4, Madison South, Barangay Batino, Calamba, Laguna, Philippines</p>
-      <p><strong>Email:</strong> <a href="mailto:info@aourtrading.com">info@aourtrading.com</a></p>
-      <p><strong>Website:</strong> <a href="https://www.aourtrading.com">www.aourtrading.com</a></p>
-      <p><strong>Contact Numbers:</strong> 0955‑655‑5670 | 0936‑159‑1531 | 0945‑873‑8100</p>
-    </div>
+    <h2>Contact Us</h2>
+    <p>Partner with us. We deliver quality, reliability, and long‑term value through trusted partnerships and dependable solutions.</p>
+    <p><strong>Address:</strong> Block 38 Lot 4, Madison South, Barangay Batino, Calamba, Laguna, Philippines</p>
+    <p><strong>Email:</strong> <a href="mailto:info@aourtrading.com">info@aourtrading.com</a></p>
+    <p><strong>Website:</strong> <a href="https://www.aourtrading.com">www.aourtrading.com</a></p>
+    <p><strong>Contact Numbers:</strong> 0955‑655‑5670 | 0936‑159‑1531 | 0945‑873‑8100</p>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; 2026 AOUR TRADING, INC. All rights reserved.</p>
   </footer>

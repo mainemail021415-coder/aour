@@ -13,21 +13,21 @@
       color: #F4F4F4;
     }
     h1, h2 {
-      color: #D4AF37;
+      color: #FFD700;
       margin-bottom: 10px;
     }
     p {
       line-height: 1.6;
     }
     a {
-      color: #D4AF37;
+      color: #FFD700;
       text-decoration: none;
     }
 
     /* ===== NAVIGATION ===== */
     nav {
       background-color: #0A0A23;
-      border-bottom: 1px solid #D4AF37;
+      border-bottom: 1px solid #FFD700;
       text-align: center;
       padding: 15px 0;
       position: sticky;
@@ -35,6 +35,7 @@
       z-index: 100;
     }
     nav a {
+      color: #FFD700;
       margin: 0 20px;
       font-weight: 500;
       transition: color 0.3s;
@@ -47,19 +48,21 @@
     .hero {
       background: url('assets/containers-city.jpg') center/cover no-repeat;
       position: relative;
-      color: #D4AF37;
+      color: #FFD700;
       text-align: center;
       padding: 160px 20px;
+      border-bottom: 1px solid #FFD700;
     }
     .hero::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 50, 0.6);
+      background: linear-gradient(rgba(0,0,50,0.7), rgba(0,0,50,0.7));
     }
     .hero-content {
       position: relative;
       z-index: 1;
+      text-shadow: 0 0 10px rgba(255,215,0,0.6);
     }
     .hero-content img {
       width: 120px;
@@ -67,25 +70,25 @@
     }
     .btn {
       background-color: transparent;
-      border: 1px solid #D4AF37;
-      color: #D4AF37;
+      border: 1px solid #FFD700;
+      color: #FFD700;
       padding: 10px 25px;
       font-weight: bold;
       cursor: pointer;
       transition: all 0.3s;
     }
     .btn:hover {
-      background-color: #D4AF37;
+      background-color: #FFD700;
       color: #0A0A23;
     }
 
     /* ===== COMPANY OVERVIEW ===== */
     #overview {
       background-color: #0B1A3A;
-      color: #D4AF37;
+      color: #FFD700;
       padding: 80px 40px;
-      border-top: 1px solid #D4AF37;
-      border-bottom: 1px solid #D4AF37;
+      border-top: 1px solid #FFD700;
+      border-bottom: 1px solid #FFD700;
     }
     .overview-content {
       display: flex;
@@ -101,16 +104,16 @@
     .overview-content .image img {
       width: 350px;
       border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      box-shadow: 0 0 20px rgba(255,215,0,0.3);
     }
 
     /* ===== HISTORY ===== */
     #history {
       background-color: #0B1A3A;
-      color: #D4AF37;
+      color: #FFD700;
       padding: 60px 40px;
-      border-top: 1px solid #D4AF37;
-      border-bottom: 1px solid #D4AF37;
+      border-top: 1px solid #FFD700;
+      border-bottom: 1px solid #FFD700;
     }
 
     /* ===== CONTACT ===== */
@@ -122,11 +125,22 @@
     /* ===== FOOTER ===== */
     footer {
       background-color: #0A0A23;
-      color: #D4AF37;
+      color: #FFD700;
       text-align: center;
       padding: 20px;
       font-size: 14px;
-      border-top: 1px solid #D4AF37;
+      border-top: 1px solid #FFD700;
+    }
+
+    /* ===== DIVIDER EFFECT ===== */
+    section::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #FFD700;
+      margin: 40px auto 0;
+      box-shadow: 0 0 10px #FFD700;
     }
   </style>
 </head>

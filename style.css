@@ -64,9 +64,8 @@ nav a:hover {
 .hero {
   background: url('assets/containers-city.jpg') center/cover no-repeat;
   position: relative;
-  color: #D4AF37;
-  text-align: center;
-  padding: 160px 20px;
+  color: #E6C200; /* mas soft gold kaysa #FFD700 */
+  font-weight: 600;
 }
 .hero::before {
   content: "";

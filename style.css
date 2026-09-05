@@ -215,3 +215,20 @@ footer {
   font-size: 1.5em;
   color: #d4af37;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #d4af37;
+}

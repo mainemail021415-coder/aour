@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AOUR TRADING, INC</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="AOUR TRADING, INC — Your trusted partner in PPE and hospitality supplies. Supplying quality products for safety and comfort.">
 </head>
 <body>
   <!-- Header -->
@@ -22,14 +23,14 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero fade-in">
     <h1>Your Trusted Partner in PPE & Hospitality Supplies</h1>
     <p>Supplying Quality Products for Safety & Comfort</p>
     <a href="#ppe-products" class="btn">Explore Our Products</a>
   </section>
 
   <!-- PPE Products -->
-  <section id="ppe-products" class="product-section">
+  <section id="ppe-products" class="product-section fade-in">
     <h2>Personal Protective Equipment</h2>
     <div class="product-grid">
       <img src="assets/ppe/hardhat.jpg" alt="Hard Hat">
@@ -40,7 +41,7 @@
   </section>
 
   <!-- Hotel Products -->
-  <section id="hotel-products" class="product-section">
+  <section id="hotel-products" class="product-section fade-in">
     <h2>Hotel & Hospitality Supplies</h2>
     <div class="product-grid">
       <img src="assets/hotel/towels.jpg" alt="Hotel Towels">
@@ -51,7 +52,7 @@
   </section>
 
   <!-- Personal Products -->
-  <section id="personal-products" class="product-section">
+  <section id="personal-products" class="product-section fade-in">
     <h2>Personal Care Items</h2>
     <div class="product-grid">
       <img src="assets/personal/comb.jpg" alt="Comb">
@@ -62,7 +63,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact fade-in">
     <h2>Contact Us Today</h2>
     <p>Get in touch with us for all your trading needs.</p>
     <a href="mailto:info@aourtrading.com" class="btn">Request a Quote</a>
@@ -72,5 +73,34 @@
   <footer>
     <p>&copy; 2026 AOUR TRADING, INC. All Rights Reserved.</p>
   </footer>
+
+  <!-- Smooth Scroll + Fade-in Script -->
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in animation on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
 </body>
 </html>

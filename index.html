@@ -3,202 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AOUR TRADING, INC.</title>
-  <style>
-    /* ===== GLOBAL STYLE ===== */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #0A0A23;
-      color: #F4F4F4;
-    }
-    h1, h2 {
-      color: #FFD700;
-      margin-bottom: 10px;
-    }
-    p {
-      line-height: 1.6;
-    }
-    a {
-      color: #FFD700;
-      text-decoration: none;
-    }
-
-    /* ===== NAVIGATION ===== */
-    nav {
-      background-color: #0A0A23;
-      border-bottom: 1px solid #FFD700;
-      text-align: center;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: #FFD700;
-      margin: 0 20px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
-    }
-
-    /* ===== HERO SECTION ===== */
-    .hero {
-      background: url('assets/containers-city.jpg') center/cover no-repeat;
-      position: relative;
-      color: #FFD700;
-      text-align: center;
-      padding: 160px 20px;
-      border-bottom: 1px solid #FFD700;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(rgba(0,0,50,0.7), rgba(0,0,50,0.7));
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-shadow: 0 0 10px rgba(255,215,0,0.6);
-    }
-    .hero-content img {
-      width: 120px;
-      margin-bottom: 20px;
-    }
-    .btn {
-      background-color: transparent;
-      border: 1px solid #FFD700;
-      color: #FFD700;
-      padding: 10px 25px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .btn:hover {
-      background-color: #FFD700;
-      color: #0A0A23;
-    }
-
-    /* ===== COMPANY OVERVIEW ===== */
-    #overview {
-      background-color: #0B1A3A;
-      color: #FFD700;
-      padding: 80px 40px;
-      border-top: 1px solid #FFD700;
-      border-bottom: 1px solid #FFD700;
-    }
-    .overview-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .overview-content .text {
-      flex: 1;
-      min-width: 300px;
-    }
-    .overview-content .image img {
-      width: 350px;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(255,215,0,0.3);
-    }
-
-    /* ===== HISTORY ===== */
-    #history {
-      background-color: #0B1A3A;
-      color: #FFD700;
-      padding: 60px 40px;
-      border-top: 1px solid #FFD700;
-      border-bottom: 1px solid #FFD700;
-    }
-
-    /* ===== CONTACT ===== */
-    #contact {
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background-color: #0A0A23;
-      color: #FFD700;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      border-top: 1px solid #FFD700;
-    }
-
-    /* ===== DIVIDER EFFECT ===== */
-    section::after {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 2px;
-      background: #FFD700;
-      margin: 40px auto 0;
-      box-shadow: 0 0 10px #FFD700;
-    }
-  </style>
+  <title>AOUR TRADING, INC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- ===== NAVIGATION ===== -->
-  <nav>
-    <a href="#overview">Overview</a>
-    <a href="#history">History</a>
-    <a href="#clients">Clients</a>
-    <a href="#team">Team</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Header -->
+  <header>
+    <div class="logo">AOUR TRADING, INC</div>
+    <nav>
+      <ul>
+        <li><a href="#ppe-products">PPE</a></li>
+        <li><a href="#hotel-products">Hotel</a></li>
+        <li><a href="#personal-products">Personal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn">Get a Quote</a>
+  </header>
 
-  <!-- ===== HERO SECTION ===== -->
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <img src="assets/logo.png" alt="AOUR TRADING, INC Logo">
-      <h1>AOUR TRADING, INC.</h1>
-      <p>Empowering Global Trade Solutions</p>
-      <button class="btn">Learn More</button>
+    <h1>Your Trusted Partner in PPE & Hospitality Supplies</h1>
+    <p>Supplying Quality Products for Safety & Comfort</p>
+    <a href="#ppe-products" class="btn">Explore Our Products</a>
+  </section>
+
+  <!-- PPE Products -->
+  <section id="ppe-products" class="product-section">
+    <h2>Personal Protective Equipment</h2>
+    <div class="product-grid">
+      <img src="assets/ppe/hardhat.jpg" alt="Hard Hat">
+      <img src="assets/ppe/gloves.jpg" alt="Safety Gloves">
+      <img src="assets/ppe/goggles.jpg" alt="Safety Goggles">
+      <img src="assets/ppe/mask.jpg" alt="Protective Mask">
     </div>
   </section>
 
-  <!-- ===== COMPANY OVERVIEW ===== -->
-  <section id="overview">
-    <h2>Company Overview</h2>
-    <div class="overview-content">
-      <div class="text">
-        <p><strong>20+ years of excellence</strong> in the trading industry with deep sourcing and supply chain expertise.</p>
-        <p>AOUR TRADING, INC. is a trusted provider of personal protective equipment (PPE) and essential consumables, dedicated to quality, reliability, and global supply solutions.</p>
-      </div>
-      <div class="image">
-        <img src="assets/ppe.png" alt="Safety Equipment">
-      </div>
+  <!-- Hotel Products -->
+  <section id="hotel-products" class="product-section">
+    <h2>Hotel & Hospitality Supplies</h2>
+    <div class="product-grid">
+      <img src="assets/hotel/towels.jpg" alt="Hotel Towels">
+      <img src="assets/hotel/slippers.jpg" alt="Hotel Slippers">
+      <img src="assets/hotel/soap.jpg" alt="Soap Dish">
+      <img src="assets/hotel/bottles.jpg" alt="Amenity Bottles">
     </div>
   </section>
 
-  <!-- ===== HISTORY ===== -->
-  <section id="history">
-    <h2>Our History</h2>
-    <p>Established in 2006 as <strong>Lyrotech Trading</strong> and restructured in 2026 as a corporation, the company reflects a legacy of experience strengthened by a new generation of leadership.</p>
-    <p>Today, AOUR Trading continues to evolve with a forward‑looking approach, combining proven expertise with fresh innovation.</p>
+  <!-- Personal Products -->
+  <section id="personal-products" class="product-section">
+    <h2>Personal Care Items</h2>
+    <div class="product-grid">
+      <img src="assets/personal/comb.jpg" alt="Comb">
+      <img src="assets/personal/lotion.jpg" alt="Lotion Bottle">
+      <img src="assets/personal/brush.jpg" alt="Hair Brush">
+      <img src="assets/personal/hygiene-kit.jpg" alt="Hygiene Kit">
+    </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Partner with us. We deliver quality, reliability, and long‑term value through trusted partnerships and dependable solutions.</p>
-    <p><strong>Address:</strong> Block 38 Lot 4, Madison South, Barangay Batino, Calamba, Laguna, Philippines</p>
-    <p><strong>Email:</strong> <a href="mailto:info@aourtrading.com">info@aourtrading.com</a></p>
-    <p><strong>Website:</strong> <a href="https://www.aourtrading.com">www.aourtrading.com</a></p>
-    <p><strong>Contact Numbers:</strong> 0955‑655‑5670 | 0936‑159‑1531 | 0945‑873‑8100</p>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us Today</h2>
+    <p>Get in touch with us for all your trading needs.</p>
+    <a href="mailto:info@aourtrading.com" class="btn">Request a Quote</a>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 AOUR TRADING, INC. All rights reserved.</p>
+    <p>&copy; 2026 AOUR TRADING, INC. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

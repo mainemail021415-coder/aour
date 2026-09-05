@@ -302,3 +302,63 @@ footer {
     max-width: 90%;
   }
 }
+/* Our History Section */
+.history {
+  background: linear-gradient(180deg, #001f3f, #0a0f2c);
+  color: white;
+  padding: 80px 20px;
+}
+
+.history-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-left {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.history-img {
+  width: 80%;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 3px solid #d4af37;
+  object-fit: contain;
+  background-color: white;
+}
+
+.history-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.history-right h2 {
+  color: #d4af37;
+  font-size: 2.3em;
+  margin-bottom: 20px;
+}
+
+.history-right p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .history-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .history-img {
+    max-width: 90%;
+  }
+}

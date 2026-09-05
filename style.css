@@ -232,3 +232,73 @@ footer {
   font-size: 1.5em;
   color: #d4af37;
 }
+/* Company Overview Section */
+.overview {
+  background: linear-gradient(180deg, #001f3f, #0a0f2c);
+  color: white;
+  padding: 80px 20px;
+}
+
+.overview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overview-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.overview-left h2 {
+  color: #d4af37;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.overview-stats p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #d4af37;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.overview-center {
+  flex: 1;
+  min-width: 300px;
+}
+
+.overview-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #d4af37;
+  object-fit: cover;
+}
+
+.overview-right {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #f4f4f4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .overview-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overview-img {
+    max-width: 90%;
+  }
+}

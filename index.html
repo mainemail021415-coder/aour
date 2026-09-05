@@ -3,168 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AOUR TRADING, INC.</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background-color: #0b1a33;
-      color: #ddd;
-      line-height: 1.6;
-    }
-
-    /* Navigation */
-    nav {
-      background-color: #0b1a33;
-      border-bottom: 1px solid #d4af37;
-      padding: 15px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      margin: 0 20px;
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #fff; }
-
-    /* Hero */
-    .hero {
-      background: linear-gradient(rgba(11,26,51,0.8), rgba(11,26,51,0.8)),
-                  url('assets/trading-bg.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 120px 20px;
-    }
-    .hero h1 { font-size: 3em; margin-bottom: 10px; color: #f5d76e; }
-    .hero p { font-size: 1.2em; margin-bottom: 30px; }
-    .hero button {
-      background-color: transparent;
-      border: 2px solid #d4af37;
-      color: #d4af37;
-      padding: 12px 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    .hero button:hover { background-color: #d4af37; color: #0b1a33; }
-
-    /* Sections */
-    section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 { color: #f5d76e; margin-bottom: 20px; }
-
-    .overview {
-      background: linear-gradient(rgba(11,26,51,0.9), rgba(11,26,51,0.9)),
-                  url('assets/ppe.png') right center / contain no-repeat;
-      background-blend-mode: overlay;
-      color: #fff;
-      min-height: 600px;
-      display: flex;
-      align-items: center;
-    }
-    .overview-text {
-      background: rgba(11,26,51,0.6);
-      padding: 40px;
-      border-left: 3px solid #d4af37;
-      border-radius: 6px;
-      max-width: 600px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background: #13294b;
-      border: 1px solid #d4af37;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .card:hover { transform: translateY(-5px); }
-    .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 6px; }
-
-    footer {
-      background-color: #0b1a33;
-      color: #aaa;
-      text-align: center;
-      padding: 20px 0;
-      border-top: 1px solid #d4af37;
-    }
-
-    @media (max-width: 768px) {
-      .overview { background-position: center; background-size: cover; }
-      .overview-text { text-align: center; }
-    }
-  </style>
+  <title>AOUR TRADING, INC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="logo">AOUR TRADING, INC</div>
+    <nav>
+      <ul>
+        <li><a href="#ppe-products">PPE</a></li>
+        <li><a href="#hotel-products">Hotel</a></li>
+        <li><a href="#personal-products">Personal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn">Get a Quote</a>
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#overview">Overview</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Your Trusted Partner in PPE & Hospitality Supplies</h1>
+    <p>Supplying Quality Products for Safety & Comfort</p>
+    <a href="#ppe-products" class="btn">Explore Our Products</a>
+  </section>
 
-  <!-- Hero -->
-  <div class="hero">
-    <h1>AOUR TRADING, INC.</h1>
-    <p>Global Supplier of PPE, Hotel & Personal Equipment</p>
-    <button onclick="location.href='#overview'">Discover More</button>
-  </div>
-
-  <!-- Company Overview -->
-  <section id="overview" class="overview">
-    <div class="overview-text">
-      <h2>Company Overview</h2>
-      <p><strong>20+ years of excellence</strong> in trading and supply chain solutions.</p>
-      <p>We provide PPE, hotel essentials, and personal equipment with a commitment to quality and reliability.</p>
+  <!-- PPE Products -->
+  <section id="ppe-products" class="product-section">
+    <h2>Personal Protective Equipment</h2>
+    <div class="product-grid">
+      <img src="assets/ppe/hardhat.jpg" alt="Hard Hat">
+      <img src="assets/ppe/gloves.jpg" alt="Safety Gloves">
+      <img src="assets/ppe/goggles.jpg" alt="Safety Goggles">
+      <img src="assets/ppe/mask.jpg" alt="Protective Mask">
     </div>
   </section>
 
-  <!-- Products -->
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="products">
-      <div class="card">
-        <img src="assets/ppe.jpg" alt="PPE">
-        <h3>Personal Protective Equipment</h3>
-        <p>Masks, gloves, helmets, and safety gear for industries worldwide.</p>
-      </div>
-      <div class="card">
-        <img src="assets/hotel.jpg" alt="Hotel Equipment">
-        <h3>Hotel Equipment</h3>
-        <p>Linens, kitchenware, and essential supplies for hospitality businesses.</p>
-      </div>
-      <div class="card">
-        <img src="assets/personal.jpg" alt="Personal Equipment">
-        <h3>Personal Equipment</h3>
-        <p>Everyday consumables and tools designed for convenience and safety.</p>
-      </div>
+  <!-- Hotel Products -->
+  <section id="hotel-products" class="product-section">
+    <h2>Hotel & Hospitality Supplies</h2>
+    <div class="product-grid">
+      <img src="assets/hotel/towels.jpg" alt="Hotel Towels">
+      <img src="assets/hotel/slippers.jpg" alt="Hotel Slippers">
+      <img src="assets/hotel/soap.jpg" alt="Soap Dish">
+      <img src="assets/hotel/bottles.jpg" alt="Amenity Bottles">
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@aourtradinginc.online">info@aourtradinginc.online</a></p>
-    <p>Phone: +63 912 345 6789</p>
+  <!-- Personal Products -->
+  <section id="personal-products" class="product-section">
+    <h2>Personal Care Items</h2>
+    <div class="product-grid">
+      <img src="assets/personal/comb.jpg" alt="Comb">
+      <img src="assets/personal/lotion.jpg" alt="Lotion Bottle">
+      <img src="assets/personal/brush.jpg" alt="Hair Brush">
+      <img src="assets/personal/hygiene-kit.jpg" alt="Hygiene Kit">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us Today</h2>
+    <p>Get in touch with us for all your trading needs.</p>
+    <a href="mailto:info@aourtrading.com" class="btn">Request a Quote</a>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 AOUR TRADING, INC. All rights reserved.</p>
+    <p>&copy; 2026 AOUR TRADING, INC. All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>

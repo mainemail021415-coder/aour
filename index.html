@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="logo-container">
       <img src="assets/logo.png" class="logo-img" alt="Company Logo">
@@ -25,33 +26,46 @@
     <a href="#contact" class="btn">Get in Touch</a>
   </header>
 
+  <!-- Hero Section -->
   <section id="hero" class="hero fade-in">
     <h1>Welcome to AOUR TRADING, INC</h1>
     <p>Your trusted supplier of PPE, hotel, and personal products.</p>
     <a href="#products" class="btn">Explore Products</a>
   </section>
 
+  <!-- Products Section -->
   <section id="products" class="product-section fade-in">
     <h2>Our Products</h2>
     <div class="product-grid">
-      <img src="assets/ppe/sample1.jpg" alt="PPE Product">
-      <img src="assets/hotel/sample2.jpg" alt="Hotel Product">
-      <img src="assets/personal/sample3.jpg" alt="Personal Product">
+      <!-- PPE -->
+      <img src="assets/ppe/mask.jpg" alt="Face Mask">
+      <img src="assets/ppe/gloves.jpg" alt="Safety Gloves">
+      <img src="assets/ppe/goggles.jpg" alt="Protective Goggles">
+      <img src="assets/ppe/hardhat.jpg" alt="Hard Hat">
+      <!-- Hotel -->
+      <img src="assets/hotel/towels.jpg" alt="Hotel Towels">
+      <img src="assets/hotel/slippers.jpg" alt="Hotel Slippers">
+      <img src="assets/hotel/soap.jpg" alt="Hotel Soap">
+      <img src="assets/hotel/bottles.jpg" alt="Hotel Bottles">
+      <!-- Personal -->
+      <img src="assets/personal/comb.jpg" alt="Comb">
+      <img src="assets/personal/brush.jpg" alt="Brush">
+      <img src="assets/personal/hygiene-kit.jpg" alt="Hygiene Kit">
+      <img src="assets/personal/lotion.jpg" alt="Lotion">
     </div>
   </section>
 
+  <!-- Overview Section -->
   <section id="overview" class="overview fade-in">
     <div class="overview-container">
       <div class="overview-left">
         <h2>Company Overview</h2>
         <p class="highlight">Trusted by clients nationwide</p>
-        <div class="overview-stats">
-          <p>✔ 10+ Years in Business</p>
-          <p>✔ 100+ Clients</p>
-        </div>
+        <p>✔ 10+ Years in Business</p>
+        <p>✔ 100+ Clients</p>
       </div>
       <div class="overview-center">
-        <img src="assets/logo.png" class="overview-img" alt="Overview Image">
+        <img src="assets/logo.png" class="overview-img" alt="Company Overview">
       </div>
       <div class="overview-right">
         <p>We provide high‑quality PPE, hotel, and personal products tailored to your needs.</p>
@@ -59,10 +73,11 @@
     </div>
   </section>
 
+  <!-- History Section -->
   <section id="history" class="history fade-in">
     <div class="history-container">
       <div class="history-left">
-        <img src="assets/ppe/sample1.jpg" class="history-img" alt="History Image">
+        <img src="assets/hotel/lyrotech-history.jpg" class="history-img" alt="Company History">
       </div>
       <div class="history-right">
         <h2>Our History</h2>
@@ -71,32 +86,38 @@
     </div>
   </section>
 
+  <!-- Clients Section -->
   <section id="clients" class="clients fade-in">
     <h2>Our Clients</h2>
     <div class="clients-container">
       <div class="clients-column">
-        <p>Client A</p>
-        <p>Client B</p>
+        <p>Lyrotech Corporation</p>
+        <p>Hotel Luxe Manila</p>
+        <p>SafeGuard PPE Supply</p>
       </div>
       <div class="clients-column">
-        <p>Client C</p>
-        <p>Client D</p>
+        <p>CleanCare Solutions</p>
+        <p>Metro Hygiene Co.</p>
+        <p>BlueWave Trading</p>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" class="contact fade-in">
     <h2>Contact Us</h2>
     <p>Email: info@aourtradinginc.online</p>
     <a href="mailto:info@aourtradinginc.online" class="btn">Send Email</a>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 AOUR TRADING, INC. All rights reserved.</p>
   </footer>
 
   <!-- Smooth Scroll + Fade-in Script -->
   <script>
+    // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -106,6 +127,7 @@
       });
     });
 
+    // Fade-in animation on scroll
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 

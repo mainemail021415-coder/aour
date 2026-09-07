@@ -55,17 +55,24 @@
     </div>
   </section>
 
-  <!-- Overview Section -->
+  <!-- Company Overview Section -->
   <section id="overview" class="overview fade-in">
     <div class="overview-container">
       <div class="overview-left">
         <h2>Company Overview</h2>
-        <p class="highlight">Trusted by clients nationwide</p>
-        <p>✔ 10+ Years in Business</p>
-        <p>✔ 100+ Clients</p>
+        <div class="overview-highlights">
+          <p><span class="highlight-number">20+</span> years of experience in trading industry</p>
+          <p>Deep knowledge in sourcing & supply chain</p>
+          <p>Established supplier relationships</p>
+        </div>
       </div>
+
+      <div class="overview-center">
+        <img src="assets/hotel/warehouse.jpg" class="overview-img" alt="Warehouse Overview">
+      </div>
+
       <div class="overview-right">
-        <p>We provide high‑quality PPE, hotel, and personal products tailored to your needs.</p>
+        <p><strong>AOUR TRADING, INC.</strong> is a reliable provider of personal protective equipment (PPE) and essential consumables, committed to delivering quality, consistency, and dependable supply solutions.</p>
       </div>
     </div>
   </section>
@@ -168,7 +175,6 @@
 
   <!-- Smooth Scroll + Fade-in Script -->
   <script>
-    // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -178,7 +184,6 @@
       });
     });
 
-    // Fade-in animation on scroll
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 

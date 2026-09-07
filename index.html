@@ -97,6 +97,15 @@
     <h2>List of Clients</h2>
     <div class="clients-container">
       <div class="clients-column">
+        <!-- Newly added clients at the top -->
+        <p>Frontken Philippines, Inc.</p>
+        <p>Sekisui Jushi Philippines</p>
+        <p>Summit Philippines</p>
+        <p>ASTRA Otoparts</p>
+        <p>HKT Philippines, Inc.</p>
+        <p>PJMI Marketing, Inc.</p>
+        <p>ALPLA Philippines, Inc.</p>
+        <!-- Existing clients -->
         <p>Toyota Motor Phils. Corp</p>
         <p>Jeco Autoparts Phils.</p>
         <p>Daisho Phils. Inc.</p>
@@ -184,15 +193,4 @@
 
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
-</body>
-</html>
+        if (!entry.isIntersecting) return

@@ -33,7 +33,7 @@
     <a href="#ppe-products" class="btn">Explore Our Products</a>
   </section>
 
-  <!-- Company Overview Section -->
+  <!-- Company Overview -->
   <section id="company-overview" class="overview fade-in">
     <div class="overview-container">
       <div class="overview-left">
@@ -50,7 +50,7 @@
     </div>
   </section>
 
-  <!-- Our History Section -->
+  <!-- Our History -->
   <section id="our-history" class="history fade-in">
     <div class="history-container">
       <div class="history-left">
@@ -58,14 +58,10 @@
       </div>
       <div class="history-right">
         <h2>Our History</h2>
-        <p>
-          Established in 2006 with formerly named <strong>Lyrotech Trading</strong> and restructured in 2026 as a corporation,
-          the company reflects a legacy of experience strengthened by a new generation of leadership.
-        </p>
-        <p>
-          Today, <strong>AOUR TRADING, INC.</strong> continues to evolve with a forward‑looking approach,
-          combining proven expertise with fresh innovation.
-        </p>
+        <p>Established in 2006 with formerly named <strong>Lyrotech Trading</strong> and restructured in 2026 as a corporation,
+          the company reflects a legacy of experience strengthened by a new generation of leadership.</p>
+        <p>Today, <strong>AOUR TRADING, INC.</strong> continues to evolve with a forward‑looking approach,
+          combining proven expertise with fresh innovation.</p>
       </div>
     </div>
   </section>
@@ -92,12 +88,11 @@
     </div>
   </section>
 
-  <!-- List of Clients Section -->
+  <!-- List of Clients -->
   <section id="clients" class="clients fade-in">
     <h2>List of Clients</h2>
     <div class="clients-container">
       <div class="clients-column">
-        <!-- Newly added clients at the top -->
         <p>Frontken Philippines, Inc.</p>
         <p>Sekisui Jushi Philippines</p>
         <p>Summit Philippines</p>
@@ -105,7 +100,6 @@
         <p>HKT Philippines, Inc.</p>
         <p>PJMI Marketing, Inc.</p>
         <p>ALPLA Philippines, Inc.</p>
-        <!-- Existing clients -->
         <p>Toyota Motor Phils. Corp</p>
         <p>Jeco Autoparts Phils.</p>
         <p>Daisho Phils. Inc.</p>
@@ -163,7 +157,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact" class="contact fade-in">
     <h2>Contact Us Today</h2>
     <p>Get in touch with us for all your trading needs.</p>
@@ -191,6 +185,7 @@
     const faders = document.querySelectorAll('.fade-in');
     const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
 
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');

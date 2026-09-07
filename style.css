@@ -362,3 +362,31 @@ footer {
     max-width: 90%;
   }
 }
+/* ===== COMPANY OVERVIEW ===== */
+.company-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: #0B1A3A;
+  color: #D4AF37;
+  padding: 80px 40px;
+  border-top: 1px solid #D4AF37;
+  border-bottom: 1px solid #D4AF37;
+}
+
+.company-overview .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.company-overview .image {
+  flex: 1;
+  text-align: right; /* para sa right alignment */
+}
+
+.company-overview .image img {
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}

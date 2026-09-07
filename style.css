@@ -390,3 +390,35 @@ footer {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(212,175,55,0.3);
 }
+.clients {
+  background-color: #0B1A3A;
+  color: #F4F4F4;
+  padding: 80px 40px;
+  text-align: center;
+  border-top: 1px solid #D4AF37;
+  border-bottom: 1px solid #D4AF37;
+}
+
+.clients h2 {
+  color: #D4AF37;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.clients-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.clients-column {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.clients-column p {
+  margin: 6px 0;
+  font-size: 15px;
+}

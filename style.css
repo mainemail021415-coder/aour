@@ -8,6 +8,7 @@
 /* Body */
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: red; /* 🔴 TEST: dapat mag-red ang background */
   background: linear-gradient(180deg, #0a0f2c, #001f3f);
   color: white;
   line-height: 1.6;

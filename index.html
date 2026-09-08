@@ -20,6 +20,7 @@
         <li><a href="#overview">Overview</a></li>
         <li><a href="#history">History</a></li>
         <li><a href="#clients">Clients</a></li>
+        <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -153,76 +154,39 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact fade-in">
-    <h2>Contact Us</h2>
-    <p>Email: info@aourtradinginc.online</p>
-    <a href="mailto:info@aourtradinginc.online" class="btn">Send Email</a>
+  <!-- Team Expertise Section -->
+  <section id="team" class="team fade-in">
+    <div class="team-container">
+      <div class="team-text">
+        <h2>Team Expertise</h2>
+        <p>Our team brings solid industry knowledge and technical capability in industrial supply, cleanroom solutions, and vertical transportation systems.</p>
+        <p>With a strong focus on quality, safety, and efficiency, we ensure dependable support and long-term value for every client we serve.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="assets/team/francis.jpg" alt="Francis Bulaong">
+          <h3>Francis Bulaong</h3>
+        </div>
+
+        <div class="team-member">
+          <img src="assets/team/coleen.jpg" alt="Coleen Escalada">
+          <h3>Coleen Escalada</h3>
+        </div>
+
+        <div class="team-member">
+          <img src="assets/team/queeni.jpg" alt="Queeni Fernandez">
+          <h3>Queeni Fernandez</h3>
+        </div>
+
+        <div class="team-member">
+          <img src="assets/team/rose.jpg" alt="Rose Platon">
+          <h3>Rose Platon</h3>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2026 AOUR TRADING, INC. All rights reserved.</p>
-  </footer>
-
-  <!-- Smooth Scroll + Fade-in Script -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
-</body>
-</html>
-<!-- Team Expertise Section -->
-<section id="team" class="team fade-in">
-  <div class="team-container">
-    <div class="team-text">
-      <h2>Team Expertise</h2>
-      <p>Our team brings solid industry knowledge and technical capability in industrial supply, cleanroom solutions, and vertical transportation systems.</p>
-      <p>With a strong focus on quality, safety, and efficiency, we ensure dependable support and long-term value for every client we serve.</p>
-    </div>
-
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="assets/team/francis.jpg" alt="Francis Bulaong">
-        <h3>Francis Bulaong</h3>
-      </div>
-
-      <div class="team-member">
-        <img src="assets/team/coleen.jpg" alt="Coleen Escalada">
-        <h3>Coleen Escalada</h3>
-      </div>
-
-      <div class="team-member">
-        <img src="assets/team/queeni.jpg" alt="Queeni Fernandez">
-        <h3>Queeni Fernandez</h3>
-      </div>
-
-      <div class="team-member">
-        <img src="assets/team/rose.jpg" alt="Rose Platon">
-        <h3>Rose Platon</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</

@@ -421,3 +421,52 @@ header .btn:hover {
     height: 200px;
   }
 }
+/* Contact Section Fix */
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #d4af37, #b8860b);
+  color: #001f3f;
+  border-top: 2px solid #d4af37;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #001f3f;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #001f3f;
+}
+
+/* Fix for email link */
+.contact a {
+  color: #001f3f;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.contact a:hover {
+  background-color: #001f3f;
+  color: #d4af37;
+  transform: scale(1.05);
+}
+
+/* Footer Fix */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #001f3f;
+  color: #d4af37;
+  border-top: 1px solid #d4af37;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+}

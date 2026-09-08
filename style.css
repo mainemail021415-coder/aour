@@ -914,3 +914,50 @@ footer {
     height: auto;
   }
 }
+/* Contact Section - Gold & Navy Theme */
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #001f3f, #0b1e3d);
+  color: #d4af37;
+  border-top: 2px solid #d4af37;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #d4af37;
+}
+
+.contact p {
+  font-size: 1.1em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #ffffff;
+}
+
+.btn {
+  background-color: #d4af37;
+  color: #001f3f;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #001f3f;
+  transform: scale(1.05);
+}

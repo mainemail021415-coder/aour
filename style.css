@@ -658,3 +658,94 @@ footer {
     height: auto;
   }
 }
+/* Hotel Supplies Section */
+.hotel-supplies {
+  background-color: #0b1e3d;
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  border-top: 2px solid #d4af37;
+}
+
+.hotel-supplies h2 {
+  font-size: 2.5em;
+  color: #d4af37;
+  margin-bottom: 50px;
+}
+
+.hotel-supplies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.hotel-category {
+  background-color: #001f3f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  width: 320px;
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.hotel-category:hover {
+  transform: scale(1.05);
+}
+
+.hotel-category h3 {
+  color: #d4af37;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.hotel-category ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.hotel-category li {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.hotel-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.hotel-images img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.hotel-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hotel-supplies-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-category {
+    width: 90%;
+  }
+
+  .hotel-images img {
+    width: 90%;
+    height: auto;
+  }
+}

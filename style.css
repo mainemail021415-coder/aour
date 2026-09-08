@@ -357,4 +357,67 @@ header .btn:hover {
 }
 
 .team-text p {
-  font-size: 1.1
+  font-size: 1.1em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-member {
+  background-color: #001f3f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+/* Fix for oversized team images */
+.team-member img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #d4af37;
+  margin: 0 auto;
+  display: block;
+}
+
+.team-member h3 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  background-color: #d4af37;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: #001f3f;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
+  }
+
+  .team-member img {
+    width: 200px;
+    height: 200px;
+  }
+}

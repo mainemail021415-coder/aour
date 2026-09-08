@@ -840,10 +840,10 @@ footer {
     height: auto;
   }
 }
-/* Partner With Us Section */
+/* Partner With Us Section - Gold & Navy Theme */
 .partner {
-  background-color: #fff;
-  color: #001f3f;
+  background-color: #001f3f; /* deep navy background */
+  color: #ffffff;
   padding: 80px 40px;
   border-top: 2px solid #d4af37;
 }
@@ -864,6 +864,7 @@ footer {
 .partner-left h2 {
   font-size: 3em;
   font-weight: 700;
+  color: #d4af37; /* gold heading */
   margin-bottom: 20px;
 }
 
@@ -871,11 +872,13 @@ footer {
   font-size: 1.1em;
   line-height: 1.6;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .partner-info p {
   font-size: 1em;
   margin: 8px 0;
+  color: #ffffff;
 }
 
 .partner-right {

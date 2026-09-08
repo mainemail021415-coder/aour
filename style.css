@@ -147,6 +147,66 @@ header .btn:hover {
   transform: scale(1.1);
 }
 
+/* What We Offer Section */
+.offer {
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #0b1e3d;
+  color: #fff;
+  border-top: 2px solid #d4af37;
+}
+
+.offer h2 {
+  font-size: 2.5em;
+  color: #d4af37;
+  margin-bottom: 50px;
+}
+
+.offer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.offer-card {
+  background-color: #001f3f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  width: 280px;
+  padding: 30px 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: scale(1.05);
+}
+
+/* Icon size fix */
+.offer-icon {
+  display: block;
+  width: 60px;
+  height: auto;
+  margin: 0 auto 20px;
+  object-fit: contain;
+}
+
+.offer-card h3 {
+  color: #d4af37;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.offer-card ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  color: #fff;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
 /* Company Overview */
 .overview {
   background: linear-gradient(180deg, #001f3f, #0a0f2c);
@@ -162,8 +222,8 @@ header .btn:hover {
   padding: 60px 80px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #0b1e3d; /* navy background */
-  border-top: 2px solid #d4af37; /* gold accent */
+  background-color: #0b1e3d;
+  border-top: 2px solid #d4af37;
 }
 
 .overview-left {
@@ -272,94 +332,6 @@ header .btn:hover {
   font-size: 15px;
 }
 
-/* Contact Section */
-.contact {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #d4af37, #b8860b);
-  color: #001f3f; /* navy text for contrast */
-  border-top: 2px solid #d4af37;
-}
-
-.contact h2 {
-  font-size: 2em;
-  color: #001f3f;
-  margin-bottom: 15px;
-}
-
-.contact p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-  color: #001f3f;
-}
-
-.contact .btn {
-  background: #001f3f;
-  color: #d4af37;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-.contact .btn:hover {
-  background: white;
-  color: #001f3f;
-  transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #001f3f;
-  color: #d4af37;
-  border-top: 1px solid #d4af37;
-  font-size: 0.95em;
-}
-
-/* Fade-in Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .product-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .product-grid img {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .overview-container,
-  .history-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .overview-img,
-  .history-img {
-    max-width: 90%;
-  }
-}
 /* Team Expertise Section */
 .team {
   background-color: #0b1e3d;
@@ -385,58 +357,4 @@ footer {
 }
 
 .team-text p {
-  font-size: 1.1em;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 10px auto;
-}
-
-.team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-
-.team-member {
-  background-color: #001f3f;
-  border: 2px solid #d4af37;
-  border-radius: 10px;
-  width: 250px;
-  padding: 20px;
-  transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-  transform: scale(1.05);
-}
-
-.team-member img {
-  width: 100%;
-  border-radius: 10px;
-  border: 2px solid #d4af37;
-  object-fit: cover;
-}
-
-.team-member h3 {
-  margin-top: 15px;
-  font-size: 1.2em;
-  color: #fff;
-  background-color: #d4af37;
-  padding: 8px 0;
-  border-radius: 5px;
-  color: #001f3f;
-  font-weight: bold;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .team-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-member {
-    width: 80%;
-  }
-}
+  font-size: 1.1

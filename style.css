@@ -275,25 +275,38 @@ header .btn:hover {
 /* Contact Section */
 .contact {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   background: linear-gradient(180deg, #d4af37, #b8860b);
-  color: navy;
+  color: #001f3f; /* navy text for contrast */
   border-top: 2px solid #d4af37;
 }
 
+.contact h2 {
+  font-size: 2em;
+  color: #001f3f;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #001f3f;
+}
+
 .contact .btn {
-  background: navy;
+  background: #001f3f;
   color: #d4af37;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .contact .btn:hover {
   background: white;
-  color: navy;
+  color: #001f3f;
   transform: scale(1.05);
 }
 
@@ -304,6 +317,7 @@ footer {
   background: #001f3f;
   color: #d4af37;
   border-top: 1px solid #d4af37;
+  font-size: 0.95em;
 }
 
 /* Fade-in Animation */

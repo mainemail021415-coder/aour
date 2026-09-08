@@ -146,6 +146,103 @@ header .btn:hover {
 .product-grid img:hover {
   transform: scale(1.1);
 }
+/* Product List Section */
+.product-list {
+  background-color: #0b1e3d;
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  border-top: 2px solid #d4af37;
+}
+
+.product-list h2 {
+  font-size: 2.5em;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.product-list h3 {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product-category {
+  background-color: #001f3f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  width: 300px;
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.product-category:hover {
+  transform: scale(1.05);
+}
+
+.product-category h4 {
+  color: #d4af37;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.product-category ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.product-category li {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.product-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product-images img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.product-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-category {
+    width: 90%;
+  }
+
+  .product-images img {
+    width: 80px;
+    height: 80px;
+  }
+}
 
 /* What We Offer Section */
 .offer {

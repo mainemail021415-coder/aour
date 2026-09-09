@@ -92,15 +92,39 @@
 <section id="presentation" class="presentation fade-in">
   <h2>Product Presentation and Meetings</h2>
 
-  <div class="presentation-container">
-    <!-- Pictures Column -->
-    <div class="presentation-box">
-      <h3>Pictures</h3>
-      <div class="presentation-gallery">
-        <img src="assets/presentation/pic1.jpg" alt="Presentation Photo 1">
-        <img src="assets/presentation/pic2.jpg" alt="Presentation Photo 2">
+  <!-- Cover Box -->
+  <div class="presentation-cover" onclick="toggleGallery()">
+    <img src="assets/presentation/cover.jpg" alt="Product Presentation Cover">
+    <div class="cover-text">Click to view presentations</div>
+  </div>
+
+  <!-- Hidden Gallery -->
+  <div id="presentation-gallery" class="presentation-gallery hidden">
+    <div class="presentation-container">
+      <!-- Pictures -->
+      <div class="presentation-box">
+        <h3>Pictures</h3>
+        <div class="presentation-media">
+          <img src="assets/presentation/pic1.jpg" alt="Presentation Photo 1">
+          <img src="assets/presentation/pic2.jpg" alt="Presentation Photo 2">
+        </div>
+      </div>
+
+      <!-- Videos -->
+      <div class="presentation-box">
+        <h3>Videos</h3>
+        <div class="presentation-media">
+          <video controls>
+            <source src="assets/presentation/video1.mp4" type="video/mp4">
+          </video>
+          <video controls>
+            <source src="assets/presentation/video2.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
     <!-- Videos Column -->
     <div class="presentation-box">

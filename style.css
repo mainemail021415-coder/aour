@@ -1029,3 +1029,87 @@ footer {
     width: 90%;
   }
 }
+/* Presentation Section */
+.presentation {
+  background-color: #0b1e3d;
+  color: #fff;
+  padding: 80px 40px;
+  text-align: center;
+  border-top: 2px solid #d4af37;
+}
+
+.presentation h2 {
+  font-size: 2.5em;
+  color: #d4af37;
+  margin-bottom: 40px;
+}
+
+/* Cover Box */
+.presentation-cover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.presentation-cover img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+.cover-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(11, 30, 61, 0.8);
+  color: #d4af37;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Hidden Gallery */
+.hidden {
+  display: none;
+}
+
+.presentation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.presentation-box {
+  background-color: #001f3f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  width: 400px;
+  padding: 25px;
+  text-align: center;
+}
+
+.presentation-box h3 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.presentation-media img,
+.presentation-media video {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.presentation-media img:hover,
+.presentation-media video:hover {
+  transform: scale(1.05);
+}
